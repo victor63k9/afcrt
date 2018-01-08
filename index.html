@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <title> Kicboxing Thai Boxe K1 MMA Round Timer </title>
+<meta name ="keywords" content="workout timer interval timer muay thai kickboxing k1 mma thai boxe">
+<meta name ="description" content="The best free Workout Timer for mma,thai boxing,k1,muay thai,kickboxing ! Courtesy of Kathaido">
+<meta name ="Copyright" content="Victor Contarin 2005-2020. All rights reserved."> 
+ <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+<link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css" />
+<link rel="manifest" href="manifest.json">
+
+<script type="text/javascript">
+ function maximize() {
+   window.moveTo(0, 0);
+   window.resizeTo(screen.width, screen.height);
+ }
+ maximize();
+</script>
+</head>
+<body>
+			<div data-role="header" data-position="fixed" data-fullscreen="true" style="background-color:#730099;color:white;" >
+			
+            <h1>Round Timer</h1>
+				<!-- <a href="#" class="ui-btn-left">Here</a> -->
+				<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Info</a>
+            </div>
+			
+			
+			
+			
+			
+			 <div data-role="main" class="ui-content" style="background-color:#b3b3ff">
+			 
+			 <div id="Sound"> 	</div>
+			 </div>
+			 <input id="txt03" type="text" value="00:00" style="font-size:7em;text-align: center;width: 100%;font-family: Verdana;font-weight: bold;">
+			<input id="dsp00" type="text" value="###" style="font-size:1.5em;text-align: center;width: 100%;font-family: Verdana;font-weight: bold;color:blue;">
+			<input id="dsp0099" type="text" value="###" style="font-size:1.5em;text-align: center;width: 100%;font-family: Verdana;font-weight: bold;color:red;">
+			
+			<fieldset class="ui-grid-b " >
+			<div class="ui-block-a ">Number of Rounds:<input id="txt01" type="text" value="3"> </div>
+				
+				<div class="ui-block-b" > Round Length:<input id="txt02" type="text" value="2" > </div>
+				<div class="ui-block-c" >Rest Time:<input id="txt05" type="text" value="1"> </div>
+			</fieldset>
+					
+			
+			
+			<div class="ui-grid-b " >
+			<div class="ui-block-a"><button  id="btn01" class="ui-btn ui-corner-all" onclick="okstart();return false;" 
+			style="background-color:#009933;color:white;">Start Workout</button></div>
+			<div class="ui-block-b"></div>
+			<div class="ui-block-c"> <button id="btn02" class="ui-btn ui-corner-all" onclick="stopall();" style="background-color:#ff1a1a;color:white;">Stop Workout</button> </div>
+			
+			</div>
+			
+			<div>
+<audio id="myaudio1">
+</audio>
+<audio id="myaudio2">
+</audio>
+<audio id="myaudio3">
+</audio>
+<audio id="myaudio99" >
+</audio>
+</div>
+			
+			
+			<div data-role="footer"  data-position="fixed" data-fullscreen="true" style="background-color:#730099;color:white;" >
+						  <h4 >Round Timer</h4> 
+									
+						</div>
+
+
+<script>
+
+if ('serviceWorker' in navigator) {
+  // Register a service worker hosted at the root of the
+  // site using the default scope.
+  console.log('sw soportado');
+  
+  navigator.serviceWorker.register('/sw.js').then(function(registration) {
+    console.log('Service worker registration succeeded:', registration);
+  }).catch(function(error) {
+    console.log('Service worker registration failed:', error);
+  });
+} else {
+  console.log('Service workers are not supported.');
+}
+
+
+</script>
+
+
+
+
+
+						
+	<script>
+function okstart()
+{
+
+
+var axaudio1;
+var go1;
+var m1=0;
+var m2=0;
+
+		axaudio1=document.getElementById('myaudio1');
+		axaudio1.setAttribute('src','1rb.mp3');
+		axaudio1.load();
+		axaudio1.play();
+        for(m1=1;m1 <=150;m1++)
+			{
+			m2++;
+			}
+            
+		axaudio1=document.getElementById('myaudio2');
+		axaudio1.setAttribute('src','1rb.mp3');
+		axaudio1.load();
+		axaudio1.play();
+        for(m1=1;m1 <=150;m1++)
+			{
+			m2++;
+			}
+		axaudio1=document.getElementById('myaudio3');
+		axaudio1.setAttribute('src','1rb.mp3');
+		axaudio1.load();
+		axaudio1.play();
+        for(m1=1;m1 <=150;m1++)
+			{
+			m2++;
+			}
+		axaudio1=document.getElementById('myaudio99');
+		axaudio1.setAttribute('src','1rb.mp3');
+		axaudio1.load();
+		axaudio1.play();
+		for(m1=1;m1 <=150;m1++)
+			{
+			m2++;
+			}
+		go1=prellamada();
+		
+		
+		
+}
+
+</script>					
+		
+<script type="text/javascript" src="lib/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="lib/jquery.mobile-1.4.5.min.js"></script>
+
+<script type="text/javascript" src="myapp.js"></script>		
+						
+</body>
+</html>
