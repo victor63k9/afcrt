@@ -1,7 +1,6 @@
 var dataCacheName='AFCRTDC1';
 var cacheName='AFCRTCN';
 var files2Cache=[
-'/',
 '/index.html',
 '/lib/cusite.min.css',
 '/lib/jquery.js',
